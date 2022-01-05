@@ -1,3 +1,4 @@
+<!--most "content on this page is just filler to fullfill assignment 1 requirements for the time being"-->
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
@@ -6,9 +7,28 @@
         <title>Assignment 1 CS 290</title>
     </head>
     <body>
-        <h1>Play super duper fun games.com</h1>
+        <h1>Play super duper fun games.com</h1> <!--Banner Title-->
             
-        <p></p>
+        <h2>Home Page</h2> <!--Page title-->
+
+        <a href="#games">Click to jump to games</a>
+
+        <p>
+            A website dedicated to fun web games!
+            <br>
+            <br>Similair websites:
+            <br>Kongregate Games link <a href="https://www.kongregate.com/"><img src="https://www.lollygaggames.com/images/kongregate_logo_w_ant.png" alt="kongregate games logo" height = 100px width=200px></a>
+            <br>Miniclip Games <img src="miniclip logo.png" alt="miniclip games logo" height = 50px width = 100px>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <!--filler white space to show fragment identifier works for jumping to games id works-->
+            
+        </p>
+
+        <dl>
+            <dt><h3>New Games Added</h3></dt>
+                <dd>New game 1</dd>
+                <dd>New game 2</dd>
+                <dd>New game 3</dd>
+        </dl>
 
         <h3><caption>Top Played Games</caption></h3>
         <ol>
@@ -17,7 +37,16 @@
             <li>top game 3</li>
         </ol>
 
-        <table border="1">
+        <h3><caption>Game Categories</caption></h3>
+        <ul>
+            <li>Action</li>
+            <li>Adventure</li>
+            <li>Puzzle</li>
+            <li>Shooter</li>
+            <li>RPG</li>
+        </ul>
+
+        <table id = "games" border="1">
             <caption>Super fun games to play</caption>
             <thead>
                 <tr>
@@ -27,27 +56,34 @@
 
             <tbody>
                 <tr>
-                    <td>awesome game 1</td>
+                    <td>awesome game 1</td> <!-- for this assignment filler text, in design of web app would be picture link to game, with description in a box-->
                     <td>awesome game 2</td>
                     <td>awesome game 3</td>
                 </tr>
     
                 <tr>
-    
-                </tr>
-    
-                <tr>
-    
+                    <td>game 4</td>
+                    <td>game 5</td>
+                    <td>game 6</td>
                 </tr>
             </tbody>
           
             <tfoot>
                 <tr>
-                    <td></td>
+                    <td>game 7</td>
+                    <td>game 8</td>
+                    <td>game 9</td>
                 </tr>
             </tfoot>
            
         </table>
+
+        <p>
+            <br> <!--to create white space until we start adding css to make this pretty-->
+            Real video of people having totally awesome fun playing totally awesome games
+        </p> 
+
+        <iframe width = 500px height = 500px src=https://www.youtube.com/embed/WokwyFppez0></iframe> <!--random video :D-->
     
     </body>
 </html>

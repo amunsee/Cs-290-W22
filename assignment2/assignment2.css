@@ -67,8 +67,8 @@ iframe{
     border: dotted blue;
 }
 
-/*side nav bar... non functioning atm...also want to extend the box current width
-of web app body but having issues with that will come back to*/
+/*side nav bar... non functioning atm...also want to extend the box current height
+to that of web app body but having issues with that will come back to*/
 .nav_bar{
     border: 5px yellow dotted;
     float: left;

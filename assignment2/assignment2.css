@@ -22,11 +22,13 @@ time, mark, audio, video {
 
 html{
     min-height: 100%;
+    width: 100%;
 }
 
 body{
     background-color:lightblue;
     height: 100%;
+    width: 100%;
 }
 
 /*affects logo picture (smiley face)*/
@@ -67,13 +69,16 @@ iframe{
     border: dotted blue;
 }
 
-/*side nav bar... non functioning atm...also want to extend the box current height
-to that of web app body but having issues with that will come back to*/
+/*side nav bar... non functioning atm...also want to extend the box current width
+of web app body but having issues with that will come back to*/  /*Tried several options to get nav bar to be
+same height as content section, so far only working solution is using padding on top and bottom, not ideal*/
 .nav_bar{
     border: 5px yellow dotted;
+    padding: 25.5% 0 25.5% 3%;
     float: left;
-    width: 9%;
+    width: 6%;
     margin: 0px 20px 0px 0px;
+    
 }
 
 /*banner where logo is*/
@@ -98,3 +103,4 @@ to that of web app body but having issues with that will come back to*/
     color: purple;
     
 }
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Assignment 3 Cs 290</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="web app, school, assignment, html, css">
+        <link rel="stylesheet" href="assignment3.css">
+    </head>
+
+    <body>
+        <div class="hor_nav">
+            <ul>
+                <li class="active">Home</li> <!--youre on home page so you can go to or interact with home button on horizontal nav bar like you can on vertical one-->
+                <span class="drop"> 
+                <li>Stuff</li>
+                
+                    <div class="drop_content"> <!--drop menu off of "stuff" in horizonal nav bar-->
+                        <a href="">Click</a>
+                        <a href="">Me</a>
+                        <a href="">For</a>
+                        <a href="">More</a>
+                    </div>
+                </span>
+                <li>More stuff</li>
+                <li>End of Stuff</li>
+            </ul>
+            
+        </div>
+            
+
+        <div class="breadcrumbs"> <!--since no other pages i just made breadcrumb for this page but could easily toss more in to show that they can be links etc-->
+            <ul>
+                <li><span class="active">Home</span></li>
+            </ul>
+        </div>
+
+        <div class="search_bar">
+            <form action="thanks.html"> <!--just to prove the submit button works, but useless-->
+                <input type="text" placeholder="Search here!" name="search_bar">
+                <input class="submit" type="submit" value="submit">
+            </form>
+        </div>
+
+        <div class="vert_nav"> <!--to simulate nav bar link/buttons but they have no functions-->
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Stuff</a></li>
+                <li><a href="">More Stuff</a></li>
+                <li><a href="">End of Stuff</a></li>
+            </ul>
+
+        </div>
+
+        <div class="text_with_background_image"> <!--picture as background for box of text-->
+            <p>
+                insert long message here about how im just some regular old text on top of a nice picture, but no one will notice because of the picture behind me... sad :(
+            </p>
+
+        </div>
+
+        <div class="float_right"> <!-- box to show float, and overflow-->
+            <p>Just a box thats gonna float to the right of the page, filler filler filler filler filler filler filler filler filler</p>
+
+        </div>
+
+        <p>
+            Shrink me to see what color the page will turn! <!--page width below 600px turns pink-->
+        </p>
+
+        <div class="text_on_image"> <!--picture of bear behind text using z index-->
+            <img src="bear_pic.jpg">
+            <p>
+                Im text that will be sitting on top of the image because im more important that it is.
+            </p>
+
+        </div>
+        
+    </body>
+</html>

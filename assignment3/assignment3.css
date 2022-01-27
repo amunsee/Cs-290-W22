@@ -1,0 +1,226 @@
+/*browser default reset block*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    color: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: lightblue;
+}
+
+.text_with_background_image{
+    float: left;
+    color: white;
+    text-align: center;
+    display: table-cell;
+    box-sizing: border-box;
+    border: solid black 10px;
+    width: 500px;
+    height: 650px;
+    overflow: visible;
+    margin: 5px 10px 30px 200px;
+    background-image: url("fat_cat.jpg");
+}
+
+.text_with_background_image p{
+    margin: 100px 25px 0px 25px;
+    color: pink;
+}
+
+.float_right{
+    height: 90px;
+    width: 100px;
+    overflow: auto;
+    border: dashed white 10px;
+    float: right;
+    margin: 0 25px 0 0;
+    color: white;
+    padding: 5px 5px 5px 5px;
+    background-color: blueviolet;
+}
+
+.text_on_image{
+    clear: both;
+    margin: 0 0 0 40%;
+    height: 500px;
+    width: 400px;
+    border: pink solid 5px;
+}
+
+.text_on_image img{
+    height: 500px;
+    width: 400px;
+    z-index: -1;
+    position: absolute;
+}
+
+.text_on_image p{
+    text-decoration: underline;
+    font-size: 22px;
+    font-weight: bold;
+    position:relative;
+    top: 150px;
+    color: rgb(247, 214, 247);
+    display: inline-block;
+    z-index: 1;
+}
+
+/*Search bar block*/
+
+.search_bar{
+    float: right;
+    margin: 0 50px 0 0;
+}
+
+/*Horizontal Nav bar info*/
+
+.hor_nav{
+    width: 100%;
+    color: brown;
+    border: black solid 5px;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.hor_nav li:not(.dropdown_menu){
+    display: inline;
+    font-size: 24px;
+    padding: 0 80px 0 13%;
+    border: purple solid 5px;
+    
+}
+
+.hor_nav li:hover:not(.active){
+    background-color: purple;
+    color: black;
+}
+
+.hor_nav .active{
+    color:black;
+    background-color: purple;
+}
+
+/*Breadcrumbs content*/
+
+.breadcrumbs{
+    background-color: gray;
+    border: white 5px;
+    padding: 0 0 0 10px;
+}
+
+.breadcrumbs .active{
+    text-decoration: underline;
+    font-weight: bold;
+    color: rgb(240, 224, 172);
+}
+
+.breadcrumbs li::after{
+    content: "\\";
+    padding: 0 5px 0 5px;
+    position: inline-block;
+}
+
+/**Vertical Nav bar content*/
+
+.vert_nav{
+    margin: 5% 0 0 0;
+    color: maroon;
+    border: sandybrown solid 5px;
+    width: 105px;
+    height: 285px;
+    box-sizing: content-box;
+    position: fixed;
+    top: 150px;
+}
+
+.vert_nav li{
+    list-style-type: none;
+    text-align: center;
+    position: sticky;
+    border: black solid 1px;
+    box-sizing: border-box;
+    width: 100px;
+    padding: 5px 0 5px 0;
+    border-radius: 25px;
+    margin: 30px 0px 20px 2px;
+    background-image: linear-gradient(to bottom right, lightgray, gray, darkgray) ;
+
+}
+
+.vert_nav li:hover{
+    cursor: pointer;
+    background-image: none;
+    background-color: black;
+    color: white;
+
+}
+
+.vert_nav a{
+    color: maroon;
+}
+
+.vert_nav li:hover a{
+    color:white;
+}
+
+
+/*Drop menu content*/
+.drop_content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    height: 200px;
+    width: 200px;
+    font-size: 25px;
+    margin: 0 0 0 25%;
+
+}
+
+.drop .drop_content > a{
+    display: block;
+    border: solid black 1px;
+    text-decoration: none;
+    background-color: white;
+    width: 100%;
+    height: 25%;
+    font-size: 50px;
+    text-align: center;
+  
+
+}
+
+.drop_content a:hover{
+    color: blue;
+}
+
+.drop:hover .drop_content{
+    display: block;
+    background-color: pink;
+}
+
+/*very basic media query, planned to do more but ran out of time*/
+@media screen and (max-width: 600px){
+    body{
+        background-color: plum;
+    }
+}

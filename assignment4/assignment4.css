@@ -1,0 +1,200 @@
+/*browser default reset block*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    color: none;
+    text-decoration: none;
+}
+
+
+body{
+    font-size: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    position: absolute;
+}
+
+/*fake nav bar for looks*/
+.nav-bar{
+    
+    background-color: beige;
+    height: 7%;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    margin: 0 0 2vw 0;
+    
+}
+
+.nav-bar ul{
+    padding: 1vw 0 0 0;
+}
+
+.nav-bar li{
+    display: inline;
+    border: solid black;    
+    color: darkgreen;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vw;
+    padding: 5px 2vw 0 2vw;
+    margin: 0px 5% 0 5%;
+
+}
+
+/*pic array stuff*/
+#pic-array{
+    border: solid purple;
+    height: 300px;
+    width: 300px;
+    background-color: mediumaquamarine;
+    margin: 0 0 10vw 1vw;
+    text-align: center;
+    float: left;
+    overflow: auto;
+}
+
+#pic-array img{
+    height: 150px;
+    width: 150px;
+    margin: 2vw 0 0 0;
+}
+
+#pic-array button{
+    margin: 0 1vw 0 1vw;
+}
+
+/*picture that hides/shows based on button clicked*/
+#on-off-pic{
+    border: solid brown;
+    background-color: yellow;
+    width: 10%;
+    float: left;
+    margin: 2% 0 0 25%;
+
+}
+
+#on-off-pic img{
+    height: 100px;
+    width: 100px;
+    margin: 0 0 0 2.5vw;
+    position: relative;
+
+}
+
+#on-off-pic #button-left{
+    margin: 0 0 0 1.5vw;
+}
+
+
+/*click the box - to see what pops up*/
+#click-me-pic{
+    border: blue solid;
+    height: 25vw;
+    width: 25vw;
+    background-color: black;
+    float: right;
+    color: white;   
+    margin: 0 1% 0 0;
+}
+
+#click-me-pic p{
+    margin: 11vw;
+    overflow: auto;
+    height: 25vw;
+    width: 25vw;
+}
+
+
+/*empty bar that fills up with each click*/
+.fill-bar{
+    background-color: white;
+    border: black solid;
+    height: 100px;
+    width: 500px;
+    clear: right;
+    margin: 0 0 0 40vw;
+}
+
+[id^="box"]{
+    background-color: white;
+    height: 100px;
+    width: 50px;
+    float: left;
+}
+
+.fill-bar button{
+    margin: 1vw 0 0 12vw;
+    color: brown;
+}
+
+
+/*box that pulls its info on click from a js object*/
+.object-display{
+    float:left;
+    border: solid black;
+    background-color: cadetblue;
+    clear: left;
+    height: 200px;
+    width: 200px;
+    margin: 0 0 0 1%;
+}
+
+.object-display img{
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+}
+
+.object-display button{
+    margin: 43% 0 0 25%;
+}
+
+/*mad libs game stuff*/
+.mad-libs{
+    background-color: pink;
+    height: 75%;
+    width: 100%;
+    margin: 5vw 0 0 0;
+   }
+   
+   
+   
+   .mad-libs .mad-libs-input{
+       float: left;
+       background-color:cornflowerblue;
+       border: solid maroon;
+       width: 30%;
+       margin: 0 0 5% 21vw;
+       padding: 5px;
+   }
+   
+   #mad-lib-output{
+       float:right;
+       height: 100px;
+       width: 30%;
+       height: 22.2vw;
+       background-color: coral;
+       margin: 0 5vw 3vw 0;
+       padding: 5px 5px 17px 5px;
+       border: black solid;
+       font-size: 25px;
+       color: white;
+   }

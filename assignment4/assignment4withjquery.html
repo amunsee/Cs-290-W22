@@ -29,8 +29,8 @@
         <div id="pic-array">
             <img id="array-pic" src="assignment4pics\dog.png" alt="array0">
             <br> <!--putting the array in the function parameters below would not work for some reason-->
-            <button onclick=pic_scroll_prev(index,img_loc)>Previous</button>
-            <button onclick=pic_scroll_next(index,img_loc)>Next</button>
+            <button class="prev">Previous</button>
+            <button class="next">Next</button>
 
             <p>
                 Click through to see all the pictures
@@ -42,8 +42,8 @@
         <div id="on-off-pic">
             <img id="on-off" src="assignment4pics\pig.jpg" alt="pig">
             <br>
-            <button id="button-left" onclick=lights_on()>Lights on</button>
-            <button onclick=lights_off()>Lights off</button>
+            <button id="button-left">Lights on</button>
+            <button id="button-right">Lights off</button>
 
         </div>
 
@@ -71,7 +71,7 @@
                                 
 
                 
-                <button onclick=fill_box(clicks)>Click to fill bar</button>
+                <button id="fill-box">Click to fill bar</button>
             </p>
         </div>
 
@@ -117,7 +117,7 @@
                 <input type="text" id="number" name="number"><label for="number">Number</label> <br>
                 <input type="text" id="pluralnoun4" name="pluralnoun4"><label for="pluralnoun4">Plural Noun</label> <br>
                 
-                <br><button onclick=generate_mad_libs()>Show Mad Libs Game</button>
+                <br><button id="mad-button">Show Mad Libs Game</button>
             
             </div>
             </p>          

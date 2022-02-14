@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title></title>
+        <meta>
+        <meta>
+        <link rel="stylesheet" href="assignment4.css"><!--css file -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--jqurey CDN-->
+        <script src="assignment4jquery.js"></script> <!--js link file-->
+    </head>
+
+    <body>
+        <!--fake nav bar for looks-->
+        <div class="nav-bar">
+            <ul>
+                <li>Home</li>
+                <li>Fake 1</li>
+                <li>Fake 2</li>
+                <li>Fake 3</li>
+            </ul>
+
+        </div>
+
+        <div class="darkmode">
+            <!--may not get to this-->
+        </div>
+
+        <!--array of pictures to scroll through-->
+        <div id="pic-array">
+            <img id="array-pic" src="assignment4pics\dog.png" alt="array0">
+            <br> <!--putting the array in the function parameters below would not work for some reason-->
+            <button onclick=pic_scroll_prev(index,img_loc)>Previous</button>
+            <button onclick=pic_scroll_next(index,img_loc)>Next</button>
+
+            <p>
+                Click through to see all the pictures
+            </p>
+
+        </div>
+
+        <!--picture that shows/dissapears based on button clicked-->
+        <div id="on-off-pic">
+            <img id="on-off" src="assignment4pics\pig.jpg" alt="pig">
+            <br>
+            <button id="button-left" onclick=lights_on()>Lights on</button>
+            <button onclick=lights_off()>Lights off</button>
+
+        </div>
+
+        <div id="click-me-pic" onclick=surprise()>
+            <p id="surprise">
+                Click me
+
+            </p>
+        </div>
+        
+        
+        <!--empty bar that fills up with each click-->
+        <div class="fill-bar">
+                            
+                    <div id="box1"></div>
+                    <div id="box2"></div>
+                    <div id="box3"></div>
+                    <div id="box4"></div>
+                    <div id="box5"></div>
+                    <div id="box6"></div>
+                    <div id="box7"></div>
+                    <div id="box8"></div>
+                    <div id="box9"></div>
+                    <div id="box10"></div>
+                                
+
+                
+                <button onclick=fill_box(clicks)>Click to fill bar</button>
+            </p>
+        </div>
+
+        <!--box with information taken from a js object-->
+        <div class="object-display">
+
+            <img id="object_img" src="" alt="object">
+
+            <p id="object-text">
+                Name:<br>
+                Occupation:<br>
+                Birthday:<br>
+            </p>
+
+            <button id = "obj-button" onclick=change_img()>Load Profile</button>
+        </div>
+        
+        <!--mad libs game first part gets input second half displays the game-->
+        <div class="mad-libs">
+            <p id="game-title">Mad Libs Game</p>
+            <p>
+            <div class="mad-libs-input">
+                <input type="text" id="adjective1" name="adjective1"><label for="adjective1">Adjective:</label> <br>
+                <input type="text" id="adjective2" name="adjective2"><label for="adjective2">Adjective</label> <br>
+                <input type="text" id="noun1" name="noun2"><label for="noun1">Noun</label> <br>
+                <input type="text" id="noun2" name="noun2"><label for="noun2">Noun</label> <br>
+
+                <input type="text" id="pluralnoun1" name="pluralnoun1"><label for="pluralnoun1">Plural Noun</label> <br>
+                <input type="text" id="game" name="game"><label for="game">Game</label> <br>
+                <input type="text" id="pluralnoun2" name="pluralnoun2"><label for="pluralnoun2">Plural Noun</label> <br>
+                <input type="text" id="verb1" name="verb1"><label for="verb1">Verb ending in ing</label> <br>
+                <input type="text" id="verb2" name="verb2"><label for="verb2">Verb ending in ing</label> <br>
+                <!--break for readability-->
+                <input type="text" id="pluralnoun3" name="pluralnoun3"><label for="pluralnoun3">Plural Noun</label> <br>
+                <input type="text" id="verb3" name="verb3"><label for="verb3">Verb ending in ing</label> <br>
+                <input type="text" id="noun3" name="noun3"><label for="noun3">Noun</label> <br>
+                <input type="text" id="plant" name="plant"><label for="plant">Plant</label> <br>
+
+                <input type="text" id="bodypart" name="bodypart"><label for="bodypart">Part of the body</label> <br>
+                <input type="text" id="place" name="place"><label for="place">Place</label> <br>
+                <input type="text" id="verb4" name="verb4"><label for="verb4">Verb ending in ing</label> <br>
+                <input type="text" id="adjective3" name="adjective3"><label for="adjective3">Adjective</label> <br>
+                <input type="text" id="number" name="number"><label for="number">Number</label> <br>
+                <input type="text" id="pluralnoun4" name="pluralnoun4"><label for="pluralnoun4">Plural Noun</label> <br>
+                
+                <br><button onclick=generate_mad_libs()>Show Mad Libs Game</button>
+            
+            </div>
+            </p>          
+
+            <div id="mad-lib-output">
+                <p id="mad-lib-content">
+                    <---Fill in the boxes to see what silly story you make!
+                </p>
+            </div>
+            
+
+        </div>
+    </body>
+</html>
+
+

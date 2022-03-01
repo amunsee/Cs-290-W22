@@ -1,4 +1,6 @@
 //this is my server file
+//using node and express for this server
+
 const fs = require('fs');
 
 const express = require('express'); //pull in express framework could have just used node to mkae this instead  oh well

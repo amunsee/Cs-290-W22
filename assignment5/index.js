@@ -46,7 +46,7 @@ app.post('/api2', (req, response) =>{ //sends the data from file to the client t
     
     fs.readFile('words.json', function(error, rawdata){
         if(error){
-            console.log("error 404");
+            console.log("error 404 no text file for search history found");
         }
     
         else{

@@ -6,6 +6,8 @@ Server was created using Node/Express, it is looking for for files in a subfolde
 
 all client end files are stored in public subfolder of this directory, words.json will be in the same level of the directory as the node server.
 
+review of assignment 0 and my old projects is in commentary.md
+
 Rough design documents:
 
 ![20220310_213911](https://user-images.githubusercontent.com/97048406/157810480-f17332f1-160c-4172-9abe-ff22565fb69b.jpg)

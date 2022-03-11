@@ -1,4 +1,5 @@
 Note: index.html needs to be in a subfolder named public from the folder index.js is in to be found. index.js is looking for the contents of a subfolder named public.
+added new words.json file - server will crash if it cant find a file already existing and has to have an empty array or array of json objects in it.
 
 Design: create a web application and server that sends some data from client to server and data from server to client.
 

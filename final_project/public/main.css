@@ -1,0 +1,142 @@
+/*browser default reset block*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video :visited{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    text-align: left;
+    color: black;
+}
+
+body{
+    background-color: #DFCFBE;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 960px;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    color: forestgreen;
+    margin: 1% 0 0 5%;
+}
+
+/*Motd box stuff below*/
+#motd{
+    background-color: lightgrey;
+    border: black solid 1px;
+    float: left;
+    height: 15%;
+    width: 15%;
+    display: inline;
+    clear: left;
+    overflow: auto;
+    margin: 1% 0 0 15%;
+}
+
+#motd h3{
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 0 0 10px 0;
+    text-align: center;
+
+}
+/*Nav bar stuff below*/
+#nav_bar{
+    background-color: black;
+    border: purple solid 5px;
+    color: white;
+    height: 60px;
+    position: sticky;
+    top: 0;
+}
+
+#nav_bar .nav{
+    width: 2%;
+    background-color: green;
+    display: inline;
+    border: black solid 1px;
+    font-size: 50px;
+    margin: 0 2% 0 0;
+}
+
+#current{
+    background-color: pink;
+    width: 2%;
+    display: inline;
+    font-size: 50px;
+    margin: 0 2% 0 2%;
+}
+
+#nav_bar .nav:hover{
+    background-color: blue;
+}
+
+/*map related stuff below*/
+#map {
+    height: 650px;
+    width: 650px;
+    border: solid black 1px;
+    float: right;
+    margin: 0 10% 0 0;
+    clear: right;
+}
+
+#inputs{
+    float: right;
+    margin: 1% 17% 0 0;
+    clear: right;
+}
+
+button{
+    background-color: lavender;
+    display: block;
+    float: right;
+    margin: 0 25% 2% 0;
+    clear: right;
+}
+
+#history{
+    clear: left;
+    margin: 28% 0 0 15%;
+    color: red;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+table{
+    background-color: pink;
+    border: blue solid 2px;
+    list-style-type: none;
+}
+
+#lon-box{
+    margin: 1% 1% 1% 0;
+}
+
+#lat-box{
+    margin: 1% 1% 1% 0;
+}
+
+/*respond to page size changes so its not as bad :)*/
+@media only screen and (max-width: 1475px) {
+    #map{
+        height: 400px;
+        width: 400px;
+        margin: 0 20% 0 0;
+    }
+}

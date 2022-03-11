@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS 290 Final Project</title>
+
+        
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+        
+    <!--Leaflet api src-->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
+     
+
+    </head>
+
+    <body onload="load_history(history)">
+        <div id = "nav_bar">
+            <ul>
+                <li id="current">Home Page</li>
+                <li class="nav"><a href="interesting_locations.html">Interesting Locations</a></li>
+                <li class="nav"><a href="info.html">Info</a></li>
+            </ul>
+        </div>
+
+        <h1>Geolocation Map Search</h1>
+
+        <p>
+            <div id="inputs">
+            longitude: <input type="text" id="lon-box"><br>
+            latitude: <br><input type="text" id="lat-box"><br>
+            </div>
+            
+        </p>
+        <button onclick="update_array(history)">submit</button>
+        <div id="map"></div> <!--map added via js-->
+        
+        <div id ="motd">
+            <h3>Message of the day</h3>
+            <p>
+                Welcome to the Geolocation Map search!<br><br>
+                Use this page to search for geolocations to hide a geocache or to lookup the location of one you know the coordinates of,
+                <br><br>if you're new to geocaching go to the info page to learn a bit about what it is, <br><br>or if you're looking for some locations 
+                check out the interesting locations page.
+            </p>
+        </div>
+
+
+
+
+        <br><br><br><br> <!--remove once i get some css formatting-->
+
+        <div id="history">
+        <caption id="caption">Most recent 5 coordinate searches</caption>
+        <table>
+            <thead>
+                <tr>
+                    <td>1</td>
+                    <td><li id="item0"></li></td>
+                </tr>          
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>2</td>
+                    <th><li id="item1"></li></th>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>3</td>
+                    <td><li id="item2"></li></td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td><li id="item3"></li></td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td><li id="item4"></li></td>
+                </tr>
+            </tfoot>
+        </table>
+        </div>
+      
+    </body>
+</html>
+
+   <!--my js file link-->
+   <script src =  "main.js">  </script> <!--loading issues for map when script put at the top-->
